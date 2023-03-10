@@ -1,0 +1,6 @@
+*.o
+src/stress_test
+src/word_count
+src/idriver
+src/tests/map_test
+src/tests/fnv64_test
