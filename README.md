@@ -97,7 +97,7 @@ For example, this is how the built-in Python
 [dictionary](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
 type associates string keys with values:
 
-```Python
+```
 m = dict()            # create a dict 
 m["name"] = "marion"  # associate the key "name" with the value "marion"
 m["city"] = "SF"      # associate the key "city" with "SF"
