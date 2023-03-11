@@ -101,7 +101,7 @@ uint64_t total_mem_alloc();
 #define EXPECT_INT_GT(val0, val1) EXPECT_OPERATOR(val0, val1, >, "%d", int)
 #define EXPECT_INT_GTE(val0, val1) EXPECT_OPERATOR(val0, val1, >=, "%d", int)
 #define EXPECT_INT_EQ(val0, val1) EXPECT_OPERATOR(val0, val1, ==, "%d", int)
-#define EXPECT_INT_NEQ(val0, val) EXPECT_OPERATOR(val0, val1, !=, "%d", int)
+#define EXPECT_INT_NEQ(val0, val1) EXPECT_OPERATOR(val0, val1, !=, "%d", int)
 
 #define EXPECT_UINT_LT(val0, val1)                                             \
   EXPECT_OPERATOR(val0, val1, <, "%u", unsigned int)
@@ -113,7 +113,7 @@ uint64_t total_mem_alloc();
   EXPECT_OPERATOR(val0, val1, >=, "%u", unsigned int)
 #define EXPECT_UINT_EQ(val0, val1)                                             \
   EXPECT_OPERATOR(val0, val1, ==, "%u", unsigned int)
-#define EXPECT_UINT_NEQ(val0, val)                                             \
+#define EXPECT_UINT_NEQ(val0, val1)                                            \
   EXPECT_OPERATOR(val0, val1, !=, "%u", unsigned int)
 
 #define EXPECT_LONG_LT(val0, val1) EXPECT_OPERATOR(val0, val1, <, "%ld", long)
@@ -121,7 +121,7 @@ uint64_t total_mem_alloc();
 #define EXPECT_LONG_GT(val0, val1) EXPECT_OPERATOR(val0, val1, >, "%ld", long)
 #define EXPECT_LONG_GTE(val0, val1) EXPECT_OPERATOR(val0, val1, >=, "%ld", long)
 #define EXPECT_LONG_EQ(val0, val1) EXPECT_OPERATOR(val0, val1, ==, "%ld", long)
-#define EXPECT_LONG_NEQ(val0, val) EXPECT_OPERATOR(val0, val1, !=, "%ld", long)
+#define EXPECT_LONG_NEQ(val0, val1) EXPECT_OPERATOR(val0, val1, !=, "%ld", long)
 
 #define EXPECT_ULONG_LT(val0, val1)                                            \
   EXPECT_OPERATOR(val0, val1, <, "%lu", unsigned long)
@@ -133,7 +133,7 @@ uint64_t total_mem_alloc();
   EXPECT_OPERATOR(val0, val1, >=, "%lu", unsigned long)
 #define EXPECT_ULONG_EQ(val0, val1)                                            \
   EXPECT_OPERATOR(val0, val1, ==, "%lu", unsigned long)
-#define EXPECT_ULONG_NEQ(val0, val)                                            \
+#define EXPECT_ULONG_NEQ(val0, val1)                                           \
   EXPECT_OPERATOR(val0, val1, !=, "%lu", unsigned long)
 
 #define EXPECT_PTR_EQ(val0, val1) EXPECT_OPERATOR(val0, val1, ==, "%p", void *)
