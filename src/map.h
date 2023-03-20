@@ -34,8 +34,7 @@ typedef struct map_metrics_t {
 
 // Creates a map with the given initial size.
 //
-// Caller owns returned pointer; must be freed with free_map.
-// Must be freed with map_free.
+// Caller owns returned pointer; must be freed with map_free.
 map_t *map_create(uint32_t init_size);
 
 // Get metrics about the current map state.
