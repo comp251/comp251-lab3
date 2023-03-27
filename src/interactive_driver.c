@@ -204,7 +204,7 @@ void fm(map_t **map) {
     return;
   printf("Freeing map...");
   map_free(map);
-  printf("done; pointer value post-free = %p\n", map);
+  printf("done; pointer value post-free = %p\n", *map);
 
   // reclaim memory from values.
   for (int i = 0; i < n_vals; i++) {
