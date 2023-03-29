@@ -44,7 +44,8 @@ map_metrics_t *map_metrics(map_t *map);
 
 // Frees a map.
 //
-// Frees any entry metadata (including keys) and m. m will be NULL upon return.
+// Frees any entry metadata (including keys) and map. map will be NULL upon
+// return.
 void map_free(map_t **map);
 
 // Resizes the map to the given size.
